@@ -1,5 +1,4 @@
-INSERT INTO `difficulties` (name) VALUES (
-  'Leicht',
-  'Mittel',
-  'Schwer'
-)
+INSERT INTO `difficulties` (name) VALUES
+  ('Leicht'),
+  ('Mittel'),
+  ('Schwer');
