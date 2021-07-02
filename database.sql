@@ -31,6 +31,6 @@ CREATE TABLE `question_stats` (
 	`question` INT NOT NULL,
   `answer` INT NOT NULL,
 	`when` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (question) REFERENCES questions(id)
+  FOREIGN KEY (question) REFERENCES questions(id),
 	PRIMARY KEY (`id`)
 );
