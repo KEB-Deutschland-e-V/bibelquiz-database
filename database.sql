@@ -25,3 +25,12 @@ CREATE TABLE `highscores` (
 	`when` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (`id`)
 );
+
+CREATE TABLE `question_stats` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`question` INT NOT NULL,
+  `answer` INT NOT NULL,
+	`when` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (question) REFERENCES questions(id)
+	PRIMARY KEY (`id`)
+);
