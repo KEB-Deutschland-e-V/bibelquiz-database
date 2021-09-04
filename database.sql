@@ -24,7 +24,8 @@ CREATE TABLE `highscores` (
 	`score` INT NOT NULL,
   `difficulty` VARCHAR(45) NOT NULL,
 	`when` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	PRIMARY KEY (`id`)
+	PRIMARY KEY (`id`),
+	FOREIGN KEY (difficulty) REFERENCES difficulties(id)
 );
 
 CREATE TABLE `question_stats` (
