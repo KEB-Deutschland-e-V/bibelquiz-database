@@ -22,6 +22,7 @@ CREATE TABLE `highscores` (
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`username` TEXT NOT NULL,
 	`score` INT NOT NULL,
+  `difficulty` VARCHAR(45) NOT NULL,
 	`when` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (`id`)
 );
@@ -31,6 +32,7 @@ CREATE TABLE `question_stats` (
 	`question` INT NOT NULL,
   `answer` INT NOT NULL,
 	`when` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  `correct` INT NOT NULL,
   FOREIGN KEY (question) REFERENCES questions(id),
 	PRIMARY KEY (`id`)
 );
