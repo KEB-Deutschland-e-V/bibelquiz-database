@@ -13,6 +13,7 @@ CREATE TABLE `questions` (
   `answer_3` TEXT NOT NULL,
   `answer_4` TEXT NOT NULL,
 	`answer` INT NOT NULL,
+  `bible` TEXT NOT NULL DEFAULT '',
   `difficulty` INT NOT NULL,
 	PRIMARY KEY (`id`),
   FOREIGN KEY (difficulty) REFERENCES difficulties(id)
