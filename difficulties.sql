@@ -1,4 +1,4 @@
-INSERT INTO `difficulties` (name) VALUES
-  ('Leicht'),
-  ('Mittel'),
-  ('Schwer');
+INSERT INTO `difficulties` (name, points) VALUES
+  ('Leicht', 10),
+  ('Mittel', 20),
+  ('Schwer', 30);

@@ -1,6 +1,7 @@
 CREATE TABLE `difficulties` (
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`name` VARCHAR(100) NOT NULL,
+  `points` INT NOT NULL,
 	UNIQUE KEY `name_index` (`name`) USING BTREE,
 	PRIMARY KEY (`id`)
 );
