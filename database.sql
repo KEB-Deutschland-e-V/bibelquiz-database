@@ -35,7 +35,7 @@ CREATE TABLE `question_stats` (
 	`question` INT NOT NULL,
   `answer` INT NOT NULL,
 	`when` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  `correct` INT NOT NULL,
+  `correct` TINYINT(1) NOT NULL,
   FOREIGN KEY (question) REFERENCES questions(id),
 	PRIMARY KEY (`id`)
 );
