@@ -36,6 +36,6 @@ CREATE TABLE `question_stats` (
   `answer` INT NOT NULL,
 	`when` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   `correct` TINYINT(1) NOT NULL,
-  FOREIGN KEY (question) REFERENCES questions(id),
+  FOREIGN KEY (question) REFERENCES questions(id) ON DELETE CASCADE,
 	PRIMARY KEY (`id`)
 );
