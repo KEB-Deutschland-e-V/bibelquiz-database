@@ -17,7 +17,7 @@ CREATE TABLE `questions` (
   `bible` TEXT NOT NULL DEFAULT '',
   `difficulty` INT NOT NULL,
 	PRIMARY KEY (`id`),
-  FOREIGN KEY (difficulty) REFERENCES difficulties(id)
+  FOREIGN KEY (difficulty) REFERENCES difficulties(id) ON DELETE NO ACTION
 );
 
 CREATE TABLE `highscores` (
