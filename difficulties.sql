@@ -1,5 +1,4 @@
-INSERT INTO `gamemode` (name, lives, questions) VALUES
-  ('Kurz', 2, 10),
-  ('Mittel', 3, 20),
-  ('Lang', 4, 30).
-  ('Unbegrenzt', 5, -1);
+INSERT INTO `difficulties` (name, points) VALUES
+  ('Leicht', 10),
+  ('Mittel', 20),
+  ('Schwer', 30);

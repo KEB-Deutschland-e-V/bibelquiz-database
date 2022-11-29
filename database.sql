@@ -6,7 +6,7 @@ CREATE TABLE `difficulties` (
 	PRIMARY KEY (`id`)
 );
 
-CREATE TABLE `gamemode` (
+CREATE TABLE `gamemodes` (
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`name` VARCHAR(100) NOT NULL,
   `lives` INT NOT NULL,
