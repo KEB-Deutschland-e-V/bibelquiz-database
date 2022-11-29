@@ -6,6 +6,15 @@ CREATE TABLE `difficulties` (
 	PRIMARY KEY (`id`)
 );
 
+CREATE TABLE `gamemode` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(100) NOT NULL,
+  `lives` INT NOT NULL,
+  `questions` INT NOT NULL,
+	UNIQUE KEY `name_index` (`name`) USING BTREE,
+	PRIMARY KEY (`id`)
+);
+
 CREATE TABLE `questions` (
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`question` TEXT NOT NULL,
