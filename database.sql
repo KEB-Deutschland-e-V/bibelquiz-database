@@ -33,7 +33,8 @@ CREATE TABLE `highscores` (
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`username` TEXT NOT NULL,
 	`score` INT NOT NULL,
-  `difficulty` VARCHAR(45) NOT NULL,
+  `difficulty` INT NOT NULL,
+  `gamemode` INT NOT NULL,
 	`when` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (`id`),
 	FOREIGN KEY (difficulty) REFERENCES difficulties(id)
