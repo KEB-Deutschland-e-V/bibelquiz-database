@@ -29,6 +29,20 @@ CREATE TABLE `questions` (
   FOREIGN KEY (difficulty) REFERENCES difficulties(id) ON DELETE NO ACTION
 );
 
+CREATE TABLE `topics` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(100) NOT NULL,
+    UNIQUE KEY `name_index` (`name`) USING BTREE,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `question_has_topics` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `id_question` INT NOT NULL,
+    `id_topic` INT NOT NULL,
+    PRIMARY KEY (`id`)
+);
+
 CREATE TABLE `highscores` (
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`username` TEXT NOT NULL,
