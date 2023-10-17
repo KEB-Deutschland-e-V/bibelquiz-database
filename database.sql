@@ -23,7 +23,7 @@ CREATE TABLE `questions` (
   `answer_3` TEXT NOT NULL,
   `answer_4` TEXT NOT NULL,
 	`answer` INT NOT NULL,
-  `bible` TEXT NOT NULL DEFAULT '',
+  `bible` TEXT,
   `difficulty` INT NOT NULL,
 	PRIMARY KEY (`id`),
   FOREIGN KEY (difficulty) REFERENCES difficulties(id) ON DELETE NO ACTION
@@ -48,7 +48,7 @@ CREATE TABLE `highscores` (
 	`username` TEXT NOT NULL,
 	`score` INT NOT NULL,
   `difficulty` INT NOT NULL,
-  `gamemode` INT NOT NULL,
+  `gamemode` INT NOT NULL DEFAULT 0,
 	`when` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (`id`),
 	FOREIGN KEY (difficulty) REFERENCES difficulties(id)
